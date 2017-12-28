@@ -358,7 +358,7 @@ this.setState({
 });
 ```
 
-To fix it, use a second form of `setState()` that accepts a function rather than an object. That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:
+To fix it, use a second form of `setState()` that accepts a function rather than an object and that function should return object with key value pair to set the state. That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:
 
 ```js
 // Correct
